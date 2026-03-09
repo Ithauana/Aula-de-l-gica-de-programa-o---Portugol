@@ -1,0 +1,12 @@
+programa {
+  funcao inicio() {
+    real nota_um, nota_dois
+
+    escreva("\nEscreva a nota 1: ")
+    leia(nota_um)
+    escreva("\nescreva nota 2: ")
+    leia(nota_dois)
+    escreva("\na média aritmética é: ", (nota_um + nota_dois)/2)
+
+  }
+}

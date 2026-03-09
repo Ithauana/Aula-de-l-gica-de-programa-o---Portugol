@@ -1,0 +1,15 @@
+programa {
+  funcao inicio() {
+    real horas_trabalhadas
+    real valor_hora
+    escreva("Horas trabalhadas: ")
+    leia(horas_trabalhadas)
+
+    escreva("\nValor por hora: ")
+    leia(valor_hora)
+
+    escreva("\nvalor a receber: ", valor_hora * horas_trabalhadas)
+    
+    
+  }
+}
