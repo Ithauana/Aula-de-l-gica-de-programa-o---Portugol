@@ -1,0 +1,8 @@
+programa {
+  inteiro idade, proxima_idade
+  funcao inicio() {
+    escreva("Digite sua idade: ")
+    leia(idade)
+    escreva("Você terá ", idade + 1, " anos no próximo ano.")
+  }
+}
