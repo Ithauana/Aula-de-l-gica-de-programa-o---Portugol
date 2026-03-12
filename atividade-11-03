@@ -1,0 +1,62 @@
+programa {
+  real nota_um, nota_dois, nota_final, valor_produto, distancia_percorrida,combustivel_utilizado, media_combustivel, valor_total_conta, valor_conta_gorjeta, valor_gorjeta, salario_atual, porcentagem_aumento, novo_salario
+  real valor_total = 0
+
+  funcao inicio() {
+    empresa_onibus()
+  }
+
+  funcao media_aluno() {
+    escreva("Escreva a primeira nota do aluno:")
+    leia(nota_um)
+    escreva("\nEscreva a segunda nota do aluno:")
+    leia(nota_dois)
+
+    nota_final = (nota_um + nota_dois)/2
+    escreva("\nA média do aluno é: ", nota_final)
+  }
+
+  funcao automacao_supermercado() {
+    escreva("DIGITE '0' PARA FINALIZAR COMPRA")
+    enquanto (valor_produto != 0){
+      escreva("Insira o valor do produto: ")
+      leia(valor_produto)
+      valor_total += valor_produto
+    }
+    escreva("O valor final da compra é: ", valor_total)
+  }
+
+  funcao empresa_onibus() {
+    escreva("Digite a distancia percorrida:")
+    leia(distancia_percorrida)
+
+    escreva("Digite a quantidade de combustivel utilizado: ")
+    leia(combustivel_utilizado)
+
+    media_combustivel = distancia_percorrida / combustivel_utilizado
+    
+    escreva(media_combustivel)
+  }
+
+  funcao gorjeta() {
+    escreva("Digite o valor total da conta: ")
+    leia(valor_total_conta)
+    valor_conta_gorjeta = valor_total_conta + (valor_total_conta * 0.10)
+    valor_gorjeta =  valor_total_conta * 0.10
+    escreva("Valor total da conta: ",valor_conta_gorjeta)
+    escreva("\nValor da gorjeta: ", valor_gorjeta)
+  
+  }
+
+  funcao aumento_salario() {
+    escreva("Digite o salário atual: ")
+    leia(salario_atual)
+
+    escreva("Digite a porcentagem de aumento")
+    leia(porcentagem_aumento)
+
+    porcentagem_aumento *= 0.10
+    novo_salario = (salario_atual * porcentagem_aumento) + salario_atual
+    escreva("O novo salário será: ", novo_salario)
+  }
+}
